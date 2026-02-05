@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    height: 100-vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004a8d; /* Azul SENAI */
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #ff8c00; /* Laranja Cebraspe */
+}
+
+/* Layout Principal */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.timer {
+    background: #ff8c00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.grid-questoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.q-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Questão respondida */
+.q-btn.respondida {
+    background-color: #004a8d; /* azul */
+    color: white;
+    border-color: #004a8d;
+}
+
+/* Questão atual */
+.q-btn.atual {
+    border: 3px solid #ff8c00; /* laranja */
+    font-weight: bold;
+}
+
+/* Área da Questão */
+.questao-container {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.header-questao {
+    border-bottom: 2px solid #ff8c00;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.code-block {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.opcao {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opcao:hover { background-color: #f0f4ff; }
+
+/* Rodapé de Botões */
+.controles {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primario {
+    background-color: #004a8d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
