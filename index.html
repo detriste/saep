@@ -3,96 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Avaliação Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login | Sistema de Avaliação</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">SATE - Avaliação de Desempenho</div>
-        <div class="user-info">João Silva (123.456.789-00) | Aluno</div>
-    </header>
-
-    <main class="container">
-
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-            <div class="timer">
-                Restam: <strong>01:54 min</strong>
+    <div class="login-wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="https://via.placeholder.com/150x50?text=LOGO+SENAI" alt="Logo SENAI">
+                <h2>Senai</h2>
+                <p>Sistema de Aplicação de Testes Eletrônicos</p>
             </div>
 
-            <h3>Questões</h3>
-
-            <div class="grid-questoes">
-                <!-- Respondida -->
-                <button class="q-btn respondida">1</button>
-
-                <!-- Atual -->
-                <button class="q-btn atual">2</button>
-
-                <!-- Não respondidas -->
-                <button class="q-btn">3</button>
-                <button class="q-btn">4</button>
-            </div>
-        </aside>
-
-        <!-- CONTEÚDO DA QUESTÃO -->
-        <section class="questao-container">
-
-            <div class="header-questao">
-                <h2>Questão 2 - Desenvolvimento de Sistemas</h2>
-            </div>
-
-            <article class="enunciado">
-                <p>
-                    Os vetores são estruturas de dados que comportam o armazenamento
-                    de "n" valores. Observe o código abaixo e identifique o
-                    comportamento do teste de mesa:
-                </p>
-
-                <div class="code-block">
-                    <code>
-                        int[] valores = new int[10];<br>
-                        for(int i = 0; i &lt;= 10; i++) {<br>
-                        &nbsp;&nbsp;valores[i] = i * 2;<br>
-                        }
-                    </code>
+            <form action="index.html"> <div class="input-group">
+                    <label for="cpf">CPF ou Matrícula</label>
+                    <input type="text" id="cpf" placeholder="000.000.000-00" required>
                 </div>
-            </article>
 
-            <form class="alternativas">
-                <label class="opcao">
-                    <input type="radio" name="pergunta">
-                    <span>A) O vetor será preenchido com valores elevados ao quadrado.</span>
-                </label>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
 
-                <label class="opcao">
-                    <input type="radio" name="pergunta">
-                    <span>B) O vetor será preenchido com o resto da divisão.</span>
-                </label>
+                <div class="opcoes-login">
+                    <label><input type="checkbox"> Lembrar de mim</label>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
 
-                <label class="opcao">
-                    <input type="radio" name="pergunta">
-                    <span>
-                        C) Ocorrerá um erro de execução (ArrayIndexOutOfBounds),
-                        pois a posição 10 não existe.
-                    </span>
-                </label>
-
-                <label class="opcao">
-                    <input type="radio" name="pergunta">
-                    <span>D) Erro de declaração local.</span>
-                </label>
+                <button type="submit" class="btn-login">Entrar no Sistema</button>
             </form>
 
-            <footer class="controles">
-                <button class="btn-secundario">Anterior</button>
-                <button class="btn-primario">Salvar e Próxima</button>
-            </footer>
-
-        </section>
-
-    </main>
+            <div class="login-footer">
+                <p>Avaliação de Desempenho de Estudante 2025</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
